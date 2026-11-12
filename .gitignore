@@ -1,0 +1,4 @@
+.env
+install/install.lock
+uploads/*
+!.gitkeep

@@ -21,7 +21,7 @@ $baseDir = rtrim(str_replace('\\', '/', $scriptPath), '/');
 // 如果处于子目录下（非根目录），则自动拼接；否则为空
 $subFolder = ($baseDir && $baseDir !== '/') ? $baseDir : '';
 
-define('SITE_URL', $protocol . '://' . $host);
+define('SITE_URL', $protocol . '://' . $host . $subFolder);
 
 define('ROOT_PATH', dirname(__DIR__) . DIRECTORY_SEPARATOR);
 define('UPLOAD_PATH', ROOT_PATH . 'uploads' . DIRECTORY_SEPARATOR);
